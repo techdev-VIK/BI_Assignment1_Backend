@@ -90,7 +90,7 @@ app.get('/allMeetups', async (req, res) => {
 
 async function readByTitle(meetupTitle) {
     try {
-        const readTitles = await Meetup.findOne({title: meetupTitle});
+        const readTitles = await Meetup.find({title: meetupTitle});
         return readTitles;
     } catch (error) {
         console.log(error)
