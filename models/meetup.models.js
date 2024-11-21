@@ -27,6 +27,10 @@ const meetupSchema = new mongoose.Schema({
         type: String,
         reuiqre: true
     },
+    eventEndTime: {
+        type: String,
+        require: true
+    },
     eventDetails: {
         type: String,
         require: true,
